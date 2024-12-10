@@ -1,0 +1,19 @@
+{
+    "name": "NestJS Codespace",
+    "image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:0-14",
+    "features": {
+      "ghcr.io/devcontainers/features/docker-in-docker:1": {}
+    },
+    "postCreateCommand": "npm install",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "dbaeumer.vscode-eslint",
+          "esbenp.prettier-vscode",
+          "ms-azuretools.vscode-docker"
+        ]
+      }
+    },
+    "forwardPorts": [3000],
+    "remoteUser": "vscode"
+  }
